@@ -107,10 +107,15 @@ ol {
 	margin: 0;
 }
 
+
+
 /*---------------------
   Helper CSS
 -----------------------*/
 
+.section-pad{
+	padding: 0px;
+}
 .section-title {
 	margin-bottom: 40px;
 }
@@ -1265,16 +1270,15 @@ ol {
 	padding: 0;
 	margin: 0 auto 20px auto;
 	list-style: none;
-	text-align: center;
   }
   
   .projects .portfolio-flters li {
 	cursor: pointer;
 	display: inline-block;
-	padding: 15px;
-	font-size: 16px;
+	padding: 0px 50px 0px 0px;
+	font-size: 12px;
 	font-weight: 500;
-	margin: 0 10px;
+	margin: 30px 30px 20px 0px;
 	line-height: 1;
 	border: solid 1px var(--color-primary);
 	border-radius: 20px;
@@ -1329,12 +1333,11 @@ ol {
   .projects .portfolio-content .portfolio-info p {
 	position: absolute;
 	bottom: 10px;
-	text-align: center;
 	display: inline-block;
-	left: 0;
+	left: 20px;
 	right: 0;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 24px;
+	font-weight: 700;
 	color: rgba(255, 255, 255, 0.8);
   }
   
