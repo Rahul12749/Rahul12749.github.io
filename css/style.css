@@ -1183,8 +1183,7 @@ ol {
 -----------------------*/
 
 .latest {
-	padding-top: 120px;
-	padding-bottom: 90px;
+	padding: 50px 0px 50px 0px;
 }
 
 .latest__btn {
@@ -1192,9 +1191,8 @@ ol {
 }
 
 .latest__item {
-	-webkit-box-shadow: 0px 15px 60px rgba(67, 69, 70, 0.1);
-	box-shadow: 0px 15px 60px rgba(67, 69, 70, 0.1);
-	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .latest__item img {
