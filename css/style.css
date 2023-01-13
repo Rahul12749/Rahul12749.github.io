@@ -344,6 +344,8 @@ ol {
 	width: 250px;
 	padding-left: 30px;
   }
+
+
   /*--------------------------------------------------------------
   # Desktop Navigation
   --------------------------------------------------------------*/
@@ -376,7 +378,7 @@ ol {
 	  padding: 0 5px;
 	  font-size: 20px;
 	  font-weight: 600;
-	  color: rgba(37, 37, 37);
+	  color: rgb(37, 37, 37);
 	  white-space: nowrap;
 	  transition: 0.3s;
 	  position: relative;
@@ -396,7 +398,6 @@ ol {
 	  height: 2px;
 	  bottom: -6px;
 	  left: 0;
-	  background-color: var(--color-primary);
 	  visibility: hidden;
 	  width: 0px;
 	  transition: all 0.3s ease-in-out 0s;
@@ -413,7 +414,7 @@ ol {
 	.navbar .active,
 	.navbar .active:focus,
 	.navbar li:hover>a {
-	  color: #fff;
+	  color: rgba(127, 137, 161);
 	}
   
 	.navbar .dropdown ul {
@@ -439,7 +440,7 @@ ol {
 	  padding: 10px 20px;
 	  font-size: 15px;
 	  text-transform: none;
-	  color: var(--color-default);
+	  color: black;
 	  font-weight: 400;
 	}
   
@@ -1184,11 +1185,11 @@ ol {
 .team__bg {
     text-align: center;
     position: absolute;
-    width: 100%;
+	margin-left: 100px;
 	margin-top: 70px;
     line-height: 1;
     font-size: 160px;
-    letter-spacing: 120px;
+    letter-spacing: 150px;
     text-transform: uppercase;
     color: rgba(0,0,0,0.8);
     opacity: 0.2;
@@ -1932,7 +1933,6 @@ ol {
     text-align: center;
     position: absolute;
 	margin-left: 100px;
-    width: 100%;
     line-height: 1;
     font-size: 160px;
     letter-spacing: 150px;
