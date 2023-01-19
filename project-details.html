@@ -156,8 +156,42 @@
                     <div class="footer__top__text">
                         <p>We are ready to share with you our design vision and lead you into the exciting world of creativity.</p>
                         <div class="team__btn">
-                            <a href="#" class="primary-btn normal-btn">View All</a>
+                            <a class="primary-btn normal-btn" id="myBtn">Send Request</a>
                         </div>
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>                                                   
+                                                <section class="get-in-touch">
+                                                    <form class="contact-form row">
+                                                    <div class="form-field col-lg-6">
+                                                        <input id="name" class="input-text js-input" type="text" required>
+                                                        <label class="label" for="name">Name</label>
+                                                    </div>
+                                                    <div class="form-field col-lg-6 ">
+                                                        <label class="label" for="email">E-mail</label>
+                                                        <input id="email" class="input-text js-input" type="email" required>
+                                                    </div>
+                                                    <div class="form-field col-lg-6 ">
+                                                        <label class="label" for="phone">Phone</label>
+                                                        <input id="phone" class="input-text js-input" type="text" required>
+                                                    </div>
+                                                    <div class="form-field col-lg-6 ">
+                                                        <label class="label" for="city">City</label>
+                                                        <input id="company" class="input-text js-input" type="text" required>
+                                                    </div>
+                                                    <div class="form-field col-lg-12">
+                                                        <label class="label" for="message">Message</label>
+                                                        <input id="message" class="input-text js-input" type="text" required>
+                                                    </div>
+                                                    <div class="form-field col-lg-12">
+                                                        <input class="submit-btn" type="submit" value="Submit">
+                                                    </div>
+                                                    </form>
+                                                </section>
+                                        </div>
+                                </div>
                     </div>
                 </div>
             </div>
@@ -193,6 +227,8 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/main1.js"></script>
+
 </body>
 
 </html>

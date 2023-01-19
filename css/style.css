@@ -116,42 +116,41 @@ ol {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 9999; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: transparent;
+	opacity: 0.9;
+	margin: auto;
+	width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	align-self: flex-end;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+	  color: #aaaaaa;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
 .section-pad{
 	padding: 0px;
 }
@@ -498,6 +497,12 @@ ol {
   # Mobile Navigation
   --------------------------------------------------------------*/
   @media (max-width: 1279px) {
+	.modal{
+		padding: 0;
+	}
+	.close{
+		padding-top: 25px;
+	}
 	.header .logo img {
 		width: 150px;
 		margin: 0;
@@ -2937,80 +2942,57 @@ ol {
 	margin-bottom: 30px;
 }
 
-.contact__form__text {
-	margin-bottom: 35px;
+.get-in-touch {
+	max-width: 800px;
+	margin: 50px auto;
+	position: relative;
+  }
+.contact-form .form-field {
+	position: relative;
+	margin: 25px 0;
 }
-
-.contact__form__text .section-title {
-	margin-bottom: 12px;
-}
-
-.contact__form__text p {
-	margin-bottom: 0;
-}
-
-.contact__form form input {
-	height: 50px;
+.contact-form .input-text {
+	display: block;
+	background-color: #000;
+	color: #fafafa;
 	width: 100%;
-	font-size: 15px;
-	color: #b7b7b7;
-	padding-left: 20px;
-	border: 1px solid #e1e1e1;
-	margin-bottom: 30px;
-}
-
-.contact__form form input::-webkit-input-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form input::-moz-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form input:-ms-input-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form input::-ms-input-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form input::placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form textarea {
-	height: 170px;
-	width: 100%;
-	font-size: 15px;
-	color: #b7b7b7;
-	padding-left: 20px;
-	padding-top: 12px;
-	border: 1px solid #e1e1e1;
-	resize: none;
-	margin-bottom: 24px;
-}
-
-.contact__form form textarea::-webkit-input-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form textarea::-moz-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form textarea:-ms-input-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form textarea::-ms-input-placeholder {
-	color: #b7b7b7;
-}
-
-.contact__form form textarea::placeholder {
-	color: #b7b7b7;
-}
-
+	height: 36px;
+	border-width: 0 0 2px 0;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+	outline: none;
+  }
+  .contact-form .label {
+	position: absolute;
+	bottom: 30px;
+	font-size: 18px;
+	line-height: 26px;;
+	font-weight: 400;
+	color: #809488;
+	cursor: text;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out, 
+	-webkit-transform .2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+	display: inline-block;
+	background-image: linear-gradient(125deg,#b7b7b7,#fafafa);
+	color: #252525;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-weight:500;
+	padding: 8px 16px;
+	border: none;
+	width:200px;
+	cursor: pointer;
+  }
+  
+  
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {

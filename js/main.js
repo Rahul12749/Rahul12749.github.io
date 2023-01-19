@@ -139,18 +139,19 @@
     aos_init();
   });
 
+  
   /**
    * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
+  */
+ const glightbox = GLightbox({
+   selector: '.glightbox'
   });
-
+  
   /**
    * Porfolio isotope and filter
-   */
-  let portfolionIsotope = document.querySelector('.portfolio-isotope');
-
+  */
+ let portfolionIsotope = document.querySelector('.portfolio-isotope');
+ 
   if (portfolionIsotope) {
 
     let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : '*';
@@ -164,7 +165,7 @@
         filter: portfolioFilter,
         sortBy: portfolioSort
       });
-
+      
       let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
       menuFilters.forEach(function(el) {
         el.addEventListener('click', function() {
@@ -178,12 +179,11 @@
           }
         }, false);
       });
-
+      
     });
-
+    
   }
 
-     
     /*--------------------------
         Project Slider
     ----------------------------*/
