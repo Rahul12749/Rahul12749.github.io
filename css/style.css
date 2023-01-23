@@ -2942,6 +2942,10 @@ ol {
 	margin-bottom: 30px;
 }
 
+.contact__widget__item__text a:hover {
+	color: #252525;
+}
+
 .get-in-touch {
 	max-width: 800px;
 	margin: 50px auto;
