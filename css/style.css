@@ -2934,6 +2934,10 @@ ol {
 	margin-bottom: 30px;
 }
 
+.contact__widget__item__text a {
+	color: #ed9842;
+	}
+
 .contact__widget__item__text a:hover {
 	color: #252525;
 }
