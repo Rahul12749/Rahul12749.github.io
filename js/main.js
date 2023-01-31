@@ -14,16 +14,28 @@
     /*------------------
         Preloader
     --------------------*/
-    $(window).on('load', function () {
-      var array =['A','L','P','S','S','T','U','D','I','O'];
-      var interval = 100;
-      array.forEach(function (el , index) {
-        setTimeout(function(){
-          console.log(el);
-        }, index * interval);
-        
-      });
-    });
+    // $(window).on('load', function () {
+      //   var array =['A','L','P','S','S','T','U','D','I','O'];
+      //   var interval = 100;
+      //   array.forEach(function (el , index) {
+        //     setTimeout(function(){
+          //       console.log(el);
+          //     }, index * interval);
+          
+          //   });
+          // });
+          $(window).on('load', function () {
+            var count = setInterval(function(){
+              var c = parseInt($('.counter').text());
+              $('.counter').text((++c).toString());
+              if(c==100){
+                clearInterval(count);
+                $('.counter').addClass('hide');
+                $('.preloder').addClass('active');
+              }
+            },10)
+            counter()
+            });
 
   /**
    * Mobile nav toggle
