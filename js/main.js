@@ -14,27 +14,28 @@
     /*------------------
         Preloader
     --------------------*/
-    // $(window).on('load', function () {
-      //   var array =['A','L','P','S','S','T','U','D','I','O'];
-      //   var interval = 100;
-      //   array.forEach(function (el , index) {
-        //     setTimeout(function(){
-          //       console.log(el);
-          //     }, index * interval);
-          
-          //   });
-          // });
+          // const alps =['A','L','P','S','I','N','T','E','R','I','O','R'];
+          // var interval = 200;
+          // alps.forEach(function (el, index) {
+          //     for (let i = 0; i < 5; i++) {
+          //         setTimeout(function () {
+          //          document.getElementById("test").innerHTML = el;
+          //         }, index*interval);
+          //       }
+          //     })
+          var alps =['A','L','P','S','I','N','T','E','R','I','O','R'];
+          var cnt = 1; 
+          var count = setInterval(function(){
+            $('.counter').text(alps[cnt]);
+            if(cnt==12){
+              cnt = 0;
+            }
+            cnt++;
+          },50)
           $(window).on('load', function () {
-            var count = setInterval(function(){
-              var c = parseInt($('.counter').text());
-              $('.counter').text((++c).toString());
-              if(c==100){
-                clearInterval(count);
-                $('.counter').addClass('hide');
-                $('.preloder').addClass('active');
-              }
-            },10)
-            counter()
+            clearInterval(count);
+            $('.counter').addClass('hide');
+            $('.preloder').addClass('active');
             });
 
   /**
