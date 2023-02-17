@@ -14,15 +14,6 @@
     /*------------------
         Preloader
     --------------------*/
-          // const alps =['A','L','P','S','I','N','T','E','R','I','O','R'];
-          // var interval = 200;
-          // alps.forEach(function (el, index) {
-          //     for (let i = 0; i < 5; i++) {
-          //         setTimeout(function () {
-          //          document.getElementById("test").innerHTML = el;
-          //         }, index*interval);
-          //       }
-          //     })
           var alps =['A','L','P','S','I','N','T','E','R','I','O','R'];
           var cnt = 1; 
           var count = setInterval(function(){
@@ -31,7 +22,7 @@
               cnt = 0;
             }
             cnt++;
-          },50)
+          },60)
           $(window).on('load', function () {
             clearInterval(count);
             $('.counter').addClass('hide');
