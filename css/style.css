@@ -1174,14 +1174,15 @@ ol {
 		  padding: 25px 25px 0 0;
 		  margin: 5px;
 		}
-		.projects .portfolio-content .portfolio-info {
-		  opacity: 1;
-		  position: absolute;
-		  inset: 0;
-		  z-index: 3;
-		  width: 320px;
-         margin-left: 25px;
-		  background: rgba(0, 0, 0, 0.3);}
+	.projects .portfolio-content .portfolio-info {
+		opacity: 1;
+		position: absolute;
+		inset: 0;
+		z-index: 3;
+		width: 320px;
+		margin-left: 25px;
+		background: rgba(0, 0, 0, 0.3);}
+
 	.spad{
 		padding-top: 0;
 	}
