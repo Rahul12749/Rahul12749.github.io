@@ -1,11 +1,4 @@
-/******************************************************************
-  Theme Name: Staging
-  Description: Staging bootstrap tamplate
-  Author: Colorib
-  Author URI: https://www.colorib.com//
-  Version: 1.0
-  Created: Colorib
-******************************************************************/
+
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -188,6 +181,10 @@ ol {
 	padding-bottom: 100px;
 }
 
+.spade {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 .text-white h1,
 .text-white h2,
 .text-white h3,
@@ -1170,15 +1167,26 @@ ol {
   }
   
   @media (max-width: 575px) {
-	.projects .portfolio-flters {
+	  .projects .portfolio-flters {
 		margin: 0 auto 50px 20px;
 	  }
-	.projects .portfolio-flters li {
-	 padding: 25px 25px 0 0;
-	  margin: 5px;
-	}
+	  .projects .portfolio-flters li {
+		  padding: 25px 25px 0 0;
+		  margin: 5px;
+		}
+		.projects .portfolio-content .portfolio-info {
+		  opacity: 1;
+		  position: absolute;
+		  inset: 0;
+		  z-index: 3;
+		  width: 320px;
+         margin-left: 21px;
+		  background: rgba(0, 0, 0, 0.3);}
 	.spad{
 		padding-top: 0;
+	}
+	.spade{
+		padding-top: 50px;
 	}
 	.portfolio-space{
 		text-align: center;
